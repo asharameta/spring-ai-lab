@@ -1,0 +1,51 @@
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Gradle (if applicable)
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Spring Boot
+*.jar
+*.war
+*.ear
+spring-shell.log
+
+# Environment & secrets
+.env
+*.env
+application-local.properties
+application-local.yml
+application-secret*.properties
+application-secret*.yml
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vector store / embeddings cache (if local)
+vector-store/
+embeddings-cache/
+chroma-data/
+qdrant-data/
+pgvector-data/
+
+# Docker
+docker-compose.override.yml
