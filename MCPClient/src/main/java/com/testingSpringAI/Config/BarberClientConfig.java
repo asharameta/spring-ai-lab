@@ -109,7 +109,7 @@ public class BarberClientConfig {
                 System.out.println("Found " + resources.length + " files");  // ← ADD THIS
 
                 if (resources.length == 0) {
-                    System.err.println("⚠️ No documents found in /docs/ directory!");
+                    System.err.println("No documents found in /docs/ directory!");
                     return;
                 }
 
@@ -117,7 +117,7 @@ public class BarberClientConfig {
                 TokenTextSplitter splitter = new TokenTextSplitter();
 
                 for (Resource resource : resources) {
-                    System.out.println("  currently splitting: " + resource.getFilename());
+                    System.out.println("currently splitting: " + resource.getFilename());
                     TikaDocumentReader reader = new TikaDocumentReader(resource);
                     List<Document> documents = reader.read();
                     List<Document> chunks = splitter.split(documents);
@@ -125,10 +125,10 @@ public class BarberClientConfig {
                 }
 
                 vectorStore.add(allChunks);
-                System.out.println("✅ Parsed " + allChunks.size() + " chunks into vector store.");
+                System.out.println("Parsed " + allChunks.size() + " chunks into vector store.");
 
             } catch (Exception e) {
-                System.err.println("❌ Error loading documents: " + e.getMessage());
+                System.err.println("Error loading documents: " + e.getMessage());
                 e.printStackTrace();
             }
         };
