@@ -1,7 +1,7 @@
-package com.testing.Controller;
+package com.testingSpringAI.Controller;
 
-import com.testing.Model.Answer;
-import com.testing.Model.Question;
+import com.testingSpringAI.Model.Answer;
+import com.testingSpringAI.Model.Question;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

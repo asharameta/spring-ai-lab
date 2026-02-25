@@ -1,3 +1,3 @@
-package com.testing.Model;
+package com.testingSpringAI.Model;
 
 public record Answer(String answer) {}

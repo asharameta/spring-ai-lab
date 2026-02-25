@@ -1,4 +1,4 @@
-package com.testing.Service;
+package com.testingSpringAI.Service;
 
 import org.springframework.ai.tool.annotation.Tool;
 import org.springframework.ai.tool.annotation.ToolParam;

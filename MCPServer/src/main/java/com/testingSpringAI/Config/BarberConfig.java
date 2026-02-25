@@ -1,6 +1,6 @@
-package com.testing.Config;
+package com.testingSpringAI.Config;
 
-import com.testing.Service.BarberService;
+import com.testingSpringAI.Service.BarberService;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.tool.method.MethodToolCallbackProvider;
 import org.springframework.context.annotation.Bean;
