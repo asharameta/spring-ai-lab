@@ -9,6 +9,6 @@ public class BarberService {
     @Tool(description = "Say hello to a person by name. Returns a greeting message.")
     public String sayHello(
             @ToolParam(description = "The name of the person to greet") String name) {
-        return "Hello, " + name + "! Welcome to the MCP world! 🌍";
+        return "Hello, " + name + "!";
     }
 }
